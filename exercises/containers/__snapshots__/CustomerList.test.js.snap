@@ -1,0 +1,68 @@
+exports[`test should render customers 1`] = `
+<div>
+  Here is your list of customers!
+  <ul>
+    <li>
+      bob
+    </li>
+    <li>
+      bobby
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`test should render no customers 1`] = `
+<div>
+  You have no customers. Better get to work!
+</div>
+`;
+
+exports[`test should respond to store updates 1`] = `
+<CustomerList
+  store={
+    Object {
+      "getCustomers": [Function],
+      "subscribe": [Function],
+    }
+  }>
+  <NoCustomers>
+    <div>
+      You have no customers. Better get to work!
+    </div>
+  </NoCustomers>
+</CustomerList>
+`;
+
+exports[`test should respond to store updates 2`] = `
+<CustomerList
+  store={
+    Object {
+      "getCustomers": [Function],
+      "subscribe": [Function],
+    }
+  }>
+  <ListOfCustomers
+    customers={
+      Array [
+        Object {
+          "name": "bob1",
+        },
+        Object {
+          "name": "bobby2",
+        },
+      ]
+    }>
+    <div>
+      <ul>
+        <li>
+          bob1
+        </li>
+        <li>
+          bobby2
+        </li>
+      </ul>
+    </div>
+  </ListOfCustomers>
+</CustomerList>
+`;

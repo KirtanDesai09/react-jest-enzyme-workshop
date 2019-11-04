@@ -1,0 +1,48 @@
+{
+  "name": "react-jest-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "🐯 A workshop repository for testing React ⚛ with Jest 🃏",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --coverage --config=exercises/jest.config.json",
+    "test:final": "jest --coverage --config=exercises-final/jest.config.json",
+    "watch:test": "jest --watch --config=exercises/jest.config.json",
+    "generate": "split-guide generate",
+    "validate": "npm run generate -s && npm run lint -s && npm run test:final -s",
+    "setup": "node ./scripts/verify && node ./scripts/install && npm run validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentcdodds/react-jest-workshop.git"
+  },
+  "keywords": [],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/react-jest-workshop/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/react-jest-workshop#readme",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^17.0.2",
+    "babel-polyfill": "6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "enzyme": "^2.6.0",
+    "enzyme-to-json": "^1.4.4",
+    "eslint": "^3.11.1",
+    "eslint-config-kentcdodds": "^11.1.0",
+    "glob": "7.1.1",
+    "jest": "^17.0.3",
+    "mkdirp": "0.5.1",
+    "react-addons-test-utils": "^15.3.2",
+    "rimraf": "2.5.4",
+    "split-guide": "1.1.0"
+  }
+}
